@@ -112,4 +112,4 @@ _Note: It may take up to 24h for the [contrib.rocks][contrib-rocks] plugin to up
 
 <!----------------------------------{ Images }--------------------------------->
 
-[mockup]: https://graph.org/file/dbfc4e2193fe8f522da4d.png
+[mockup]: https://graph.org/file/d18be68a824517335e1eb.png

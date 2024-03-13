@@ -9,7 +9,7 @@
 
 # React Starter Template w/ ViteTs
 
-### A Minimal React Starter Template with Vite, TailwindCSS, and TypeScript pre-configured with ESLint and Prettier
+## A Minimal React Starter Template with Vite, TailwindCSS, and TypeScript pre-configured with ESLint and Prettier
 
 <br>
 
@@ -59,18 +59,18 @@ git commit -m "init"
 
 In the project directory, you can run:
 
-| **Script**   | **Description**                                                 |
-| ------------ | --------------------------------------------------------------- |
-| `dev`        | Runs the app in the development mode.                           |
-| `build`      | Builds the app for production to the `dist` folder.             |
-| `serve`      | Serves the production build from the `dist` folder.             |
-| `preview`    | Bundles and serves the production build from the `dist` folder. |
-| `type-check` | Runs TypeScript type-checking.                                  |
-| `lint`       | Runs ESLint with Prettier.                                      |
-| `fix`        | Runs ESLint with Prettier and fixes the errors.                 |
-| `fmt`        | Checks if the code is formatted with Prettier, if not then formats the code.                  |
-| `fmt:check`  | Checks if the code is formatted with Prettier.                  |
-| `fmt:write`  | Formats the code with Prettier.                                 |
+| **Script**   | **Description**                                                              |
+| ------------ | ---------------------------------------------------------------------------- |
+| `dev`        | Runs the app in the development mode.                                        |
+| `build`      | Builds the app for production to the `dist` folder.                          |
+| `serve`      | Serves the production build from the `dist` folder.                          |
+| `preview`    | Bundles and serves the production build from the `dist` folder.              |
+| `type-check` | Runs TypeScript type-checking.                                               |
+| `lint`       | Runs ESLint with Prettier.                                                   |
+| `fix`        | Runs ESLint with Prettier and fixes the errors.                              |
+| `fmt`        | Checks if the code is formatted with Prettier, if not then formats the code. |
+| `fmt:check`  | Checks if the code is formatted with Prettier.                               |
+| `fmt:write`  | Formats the code with Prettier.                                              |
 
 ## After Installation Checklist
 

@@ -23,9 +23,9 @@ export default function App() {
           </h1>
         </header>
         <div className="flex items-center justify-center gap-5">
-          <img src="/react.svg" className="h-40 w-40" />
+          <img src="/react.svg" className="h-40 w-40" alt="react" />
           <div className="text-6xl font-bold text-cyan-100">+</div>
-          <img src="/vite.svg" className="h-36 w-36" />
+          <img src="/vite.svg" className="h-36 w-36" alt="vite" />
         </div>
         <p className="px-4 text-center text-3xl tracking-wide text-amber-50">
           A React template with <Span>Vite</Span>, <Span>TypeScript</Span>,{" "}

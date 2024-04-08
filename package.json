@@ -19,7 +19,7 @@
     "fmt:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
-    "lucide-react": "^0.364.0",
+    "lucide-react": "^0.365.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3"
@@ -27,9 +27,9 @@
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "@total-typescript/ts-reset": "^0.5.1",
-    "@types/node": "^20.12.3",
+    "@types/node": "^20.12.5",
     "@types/react": "^18.2.74",
-    "@types/react-dom": "^18.2.23",
+    "@types/react-dom": "^18.2.24",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react-swc": "^3.6.0",
@@ -45,7 +45,7 @@
     "prettier-plugin-tailwindcss": "^0.5.13",
     "tailwind-merge": "^2.2.2",
     "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.3",
-    "vite": "^5.2.7"
+    "typescript": "^5.4.4",
+    "vite": "^5.2.8"
   }
 }

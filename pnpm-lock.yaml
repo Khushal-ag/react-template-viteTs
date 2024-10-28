@@ -26,11 +26,11 @@ devDependencies:
     specifier: ^0.6.1
     version: 0.6.1
   '@types/node':
-    specifier: ^20.16.13
-    version: 20.16.13
+    specifier: ^20.17.1
+    version: 20.17.1
   '@types/react':
-    specifier: ^18.3.11
-    version: 18.3.11
+    specifier: ^18.3.12
+    version: 18.3.12
   '@types/react-dom':
     specifier: ^18.3.1
     version: 18.3.1
@@ -42,7 +42,7 @@ devDependencies:
     version: 7.18.0(eslint@9.13.0)(typescript@5.6.3)
   '@vitejs/plugin-react-swc':
     specifier: ^3.7.1
-    version: 3.7.1(vite@5.4.9)
+    version: 3.7.1(vite@5.4.10)
   autoprefixer:
     specifier: ^10.4.20
     version: 10.4.20(postcss@8.4.47)
@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^4.6.2
     version: 4.6.2(eslint@9.13.0)
   eslint-plugin-react-refresh:
-    specifier: ^0.4.13
-    version: 0.4.13(eslint@9.13.0)
+    specifier: ^0.4.14
+    version: 0.4.14(eslint@9.13.0)
   eslint-plugin-tailwindcss:
     specifier: ^3.17.5
     version: 3.17.5(tailwindcss@3.4.14)
@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^5.6.3
     version: 5.6.3
   vite:
-    specifier: ^5.4.9
-    version: 5.4.9(@types/node@20.16.13)
+    specifier: ^5.4.10
+    version: 5.4.10(@types/node@20.17.1)
 
 packages:
 
@@ -2243,8 +2243,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@20.16.13:
-    resolution: {integrity: sha512-GjQ7im10B0labo8ZGXDGROUl9k0BNyDgzfGpb4g/cl+4yYDWVKcozANF4FGr4/p0O/rAkQClM6Wiwkije++1Tg==}
+  /@types/node@20.17.1:
+    resolution: {integrity: sha512-j2VlPv1NnwPJbaCNv69FO/1z4lId0QmGvpT41YxitRtWlg96g/j8qcv2RKsLKe2F6OJgyXhupN1Xo17b2m139Q==}
     dependencies:
       undici-types: 6.19.6
     dev: true
@@ -2260,11 +2260,11 @@ packages:
   /@types/react-dom@18.3.1:
     resolution: {integrity: sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==}
     dependencies:
-      '@types/react': 18.3.11
+      '@types/react': 18.3.12
     dev: true
 
-  /@types/react@18.3.11:
-    resolution: {integrity: sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==}
+  /@types/react@18.3.12:
+    resolution: {integrity: sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==}
     dependencies:
       '@types/prop-types': 15.7.8
       csstype: 3.1.2
@@ -2544,13 +2544,13 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@vitejs/plugin-react-swc@3.7.1(vite@5.4.9):
+  /@vitejs/plugin-react-swc@3.7.1(vite@5.4.10):
     resolution: {integrity: sha512-vgWOY0i1EROUK0Ctg1hwhtC3SdcDjZcdit4Ups4aPkDcB1jYhmo+RMYWY87cmXMhvtD5uf8lV89j2w16vkdSVg==}
     peerDependencies:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.7.26
-      vite: 5.4.9(@types/node@20.16.13)
+      vite: 5.4.10(@types/node@20.17.1)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -3413,8 +3413,8 @@ packages:
       eslint: 9.13.0
     dev: true
 
-  /eslint-plugin-react-refresh@0.4.13(eslint@9.13.0):
-    resolution: {integrity: sha512-f1EppwrpJRWmqDTyvAyomFVDYRtrS7iTEqv3nokETnMiMzs2SSTmKRTACce4O2p4jYyowiSMvpdwC/RLcMFhuQ==}
+  /eslint-plugin-react-refresh@0.4.14(eslint@9.13.0):
+    resolution: {integrity: sha512-aXvzCTK7ZBv1e7fahFuR3Z/fyQQSIQ711yPgYRj+Oj64tyTgO4iQIDmYXDBqvSWQ/FA4OSCsXOStlF+noU0/NA==}
     peerDependencies:
       eslint: '>=7'
     dependencies:
@@ -5134,8 +5134,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite@5.4.9(@types/node@20.16.13):
-    resolution: {integrity: sha512-20OVpJHh0PAM0oSOELa5GaZNWeDjcAvQjGXy2Uyr+Tp+/D2/Hdz6NLgpJLsarPTA2QJ6v8mX2P1ZfbsSKvdMkg==}
+  /vite@5.4.10(@types/node@20.17.1):
+    resolution: {integrity: sha512-1hvaPshuPUtxeQ0hsVH3Mud0ZanOLwVTneA1EgbAM5LhaZEqyPWGRQ7BtaMvUrTDeEaC8pxtj6a6jku3x4z6SQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -5165,7 +5165,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.16.13
+      '@types/node': 20.17.1
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.21.0

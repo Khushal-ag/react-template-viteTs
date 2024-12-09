@@ -19,7 +19,7 @@
     "fmt:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
-    "lucide-react": "^0.462.0",
+    "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0"
@@ -28,8 +28,8 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
     "@total-typescript/ts-reset": "^0.6.1",
     "@types/node": "^20.17.9",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^18.3.14",
+    "@types/react-dom": "^18.3.2",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react-swc": "^3.7.2",
@@ -38,13 +38,13 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint-plugin-react-refresh": "^0.4.16",
     "eslint-plugin-tailwindcss": "^3.17.5",
     "postcss": "^8.4.49",
-    "prettier": "^3.4.1",
+    "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss": "^3.4.15",
+    "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2",
     "vite": "^5.4.11"
   }

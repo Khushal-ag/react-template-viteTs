@@ -19,7 +19,7 @@
     "fmt:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
-    "lucide-react": "^0.479.0",
+    "lucide-react": "^0.482.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.0"

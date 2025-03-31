@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   lucide-react:
-    specifier: ^0.483.0
-    version: 0.483.0(react@18.3.1)
+    specifier: ^0.485.0
+    version: 0.485.0(react@18.3.1)
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -26,14 +26,14 @@ devDependencies:
     specifier: ^0.6.1
     version: 0.6.1
   '@types/node':
-    specifier: ^20.17.25
-    version: 20.17.25
+    specifier: ^20.17.28
+    version: 20.17.28
   '@types/react':
-    specifier: ^18.3.19
-    version: 18.3.19
+    specifier: ^18.3.20
+    version: 18.3.20
   '@types/react-dom':
     specifier: ^18.3.5
-    version: 18.3.5(@types/react@18.3.19)
+    version: 18.3.5(@types/react@18.3.20)
   '@typescript-eslint/eslint-plugin':
     specifier: ^7.18.0
     version: 7.18.0(@typescript-eslint/parser@7.18.0)(eslint@9.23.0)(typescript@5.8.2)
@@ -42,7 +42,7 @@ devDependencies:
     version: 7.18.0(eslint@9.23.0)(typescript@5.8.2)
   '@vitejs/plugin-react-swc':
     specifier: ^3.8.1
-    version: 3.8.1(vite@5.4.14)
+    version: 3.8.1(vite@5.4.15)
   autoprefixer:
     specifier: ^10.4.21
     version: 10.4.21(postcss@8.5.3)
@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^5.8.2
     version: 5.8.2
   vite:
-    specifier: ^5.4.14
-    version: 5.4.14(@types/node@20.17.25)
+    specifier: ^5.4.15
+    version: 5.4.15(@types/node@20.17.28)
 
 packages:
 
@@ -2268,8 +2268,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@20.17.25:
-    resolution: {integrity: sha512-bT+r2haIlplJUYtlZrEanFHdPIZTeiMeh/fSOEbOOfWf9uTn+lg8g0KU6Q3iMgjd9FLuuMAgfCNSkjUbxL6E3Q==}
+  /@types/node@20.17.28:
+    resolution: {integrity: sha512-DHlH/fNL6Mho38jTy7/JT7sn2wnXI+wULR6PV4gy4VHLVvnrV/d3pHAMQHhc4gjdLmK2ZiPoMxzp6B3yRajLSQ==}
     dependencies:
       undici-types: 6.19.6
     dev: true
@@ -2282,16 +2282,16 @@ packages:
     resolution: {integrity: sha512-kMpQpfZKSCBqltAJwskgePRaYRFukDkm1oItcAbC3gNELR20XIBcN9VRgg4+m8DKsTfkWeA4m4Imp4DDuWy7FQ==}
     dev: true
 
-  /@types/react-dom@18.3.5(@types/react@18.3.19):
+  /@types/react-dom@18.3.5(@types/react@18.3.20):
     resolution: {integrity: sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==}
     peerDependencies:
       '@types/react': ^18.0.0
     dependencies:
-      '@types/react': 18.3.19
+      '@types/react': 18.3.20
     dev: true
 
-  /@types/react@18.3.19:
-    resolution: {integrity: sha512-fcdJqaHOMDbiAwJnXv6XCzX0jDW77yI3tJqYh1Byn8EL5/S628WRx9b/y3DnNe55zTukUQKrfYxiZls2dHcUMw==}
+  /@types/react@18.3.20:
+    resolution: {integrity: sha512-IPaCZN7PShZK/3t6Q87pfTkRm6oLTd4vztyoj+cbHUF1g3FfVb2tFIL79uCRKEfv16AhqDMBywP2VW3KIZUvcg==}
     dependencies:
       '@types/prop-types': 15.7.8
       csstype: 3.1.2
@@ -2571,13 +2571,13 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@vitejs/plugin-react-swc@3.8.1(vite@5.4.14):
+  /@vitejs/plugin-react-swc@3.8.1(vite@5.4.15):
     resolution: {integrity: sha512-aEUPCckHDcFyxpwFm0AIkbtv6PpUp3xTb9wYGFjtABynXjCYKkWoxX0AOK9NT9XCrdk6mBBUOeHQS+RKdcNO1A==}
     peerDependencies:
       vite: ^4 || ^5 || ^6
     dependencies:
       '@swc/core': 1.11.12
-      vite: 5.4.14(@types/node@20.17.25)
+      vite: 5.4.15(@types/node@20.17.28)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -4189,8 +4189,8 @@ packages:
       yallist: 3.1.1
     dev: true
 
-  /lucide-react@0.483.0(react@18.3.1):
-    resolution: {integrity: sha512-WldsY17Qb/T3VZdMnVQ9C3DDIP7h1ViDTHVdVGnLZcvHNg30zH/MTQ04RTORjexoGmpsXroiQXZ4QyR0kBy0FA==}
+  /lucide-react@0.485.0(react@18.3.1):
+    resolution: {integrity: sha512-NvyQJ0LKyyCxL23nPKESlr/jmz8r7fJO1bkuptSNYSy0s8VVj4ojhX0YAgmE1e0ewfxUZjIlZpvH+otfTnla8Q==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
     dependencies:
@@ -5180,8 +5180,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite@5.4.14(@types/node@20.17.25):
-    resolution: {integrity: sha512-EK5cY7Q1D8JNhSaPKVK4pwBFvaTmZxEnoKXLG/U9gmdDcihQGNzFlgIvaxezFR4glP1LsuiedwMBqCXH3wZccA==}
+  /vite@5.4.15(@types/node@20.17.28):
+    resolution: {integrity: sha512-6ANcZRivqL/4WtwPGTKNaosuNJr5tWiftOC7liM7G9+rMb8+oeJeyzymDu4rTN93seySBmbjSfsS3Vzr19KNtA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -5211,7 +5211,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.17.25
+      '@types/node': 20.17.28
       esbuild: 0.21.5
       postcss: 8.5.3
       rollup: 4.21.0

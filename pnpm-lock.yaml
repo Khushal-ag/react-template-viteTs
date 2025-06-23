@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   lucide-react:
-    specifier: ^0.515.0
-    version: 0.515.0(react@18.3.1)
+    specifier: ^0.522.0
+    version: 0.522.0(react@18.3.1)
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -21,13 +21,13 @@ dependencies:
 devDependencies:
   '@ianvs/prettier-plugin-sort-imports':
     specifier: ^4.4.2
-    version: 4.4.2(prettier@3.5.3)
+    version: 4.4.2(prettier@3.6.0)
   '@total-typescript/ts-reset':
     specifier: ^0.6.1
     version: 0.6.1
   '@types/node':
-    specifier: ^20.19.0
-    version: 20.19.0
+    specifier: ^20.19.1
+    version: 20.19.1
   '@types/react':
     specifier: ^18.3.23
     version: 18.3.23
@@ -45,7 +45,7 @@ devDependencies:
     version: 3.10.2(vite@5.4.19)
   autoprefixer:
     specifier: ^10.4.21
-    version: 10.4.21(postcss@8.5.5)
+    version: 10.4.21(postcss@8.5.6)
   eslint:
     specifier: ^9.29.0
     version: 9.29.0
@@ -65,14 +65,14 @@ devDependencies:
     specifier: ^3.18.0
     version: 3.18.0(tailwindcss@3.4.17)
   postcss:
-    specifier: ^8.5.5
-    version: 8.5.5
+    specifier: ^8.5.6
+    version: 8.5.6
   prettier:
-    specifier: ^3.5.3
-    version: 3.5.3
+    specifier: ^3.6.0
+    version: 3.6.0
   prettier-plugin-tailwindcss:
-    specifier: ^0.6.12
-    version: 0.6.12(@ianvs/prettier-plugin-sort-imports@4.4.2)(prettier@3.5.3)
+    specifier: ^0.6.13
+    version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2)(prettier@3.6.0)
   tailwind-merge:
     specifier: ^2.6.0
     version: 2.6.0
@@ -84,7 +84,7 @@ devDependencies:
     version: 5.8.3
   vite:
     specifier: ^5.4.19
-    version: 5.4.19(@types/node@20.19.0)
+    version: 5.4.19(@types/node@20.19.1)
 
 packages:
 
@@ -1891,7 +1891,7 @@ packages:
     engines: {node: '>=18.18'}
     dev: true
 
-  /@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3):
+  /@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.0):
     resolution: {integrity: sha512-KkVFy3TLh0OFzimbZglMmORi+vL/i2OFhEs5M07R9w0IwWAGpsNNyE4CY/2u0YoMF5bawKC2+8/fUH60nnNtjw==}
     peerDependencies:
       '@vue/compiler-sfc': 2.7.x || 3.x
@@ -1904,7 +1904,7 @@ packages:
       '@babel/parser': 7.26.2
       '@babel/traverse': 7.25.9
       '@babel/types': 7.26.0
-      prettier: 3.5.3
+      prettier: 3.6.0
       semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
@@ -2272,8 +2272,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@20.19.0:
-    resolution: {integrity: sha512-hfrc+1tud1xcdVTABC2JiomZJEklMcXYNTVtZLAeqTVWD+qL5jkHKT+1lOtqDdGxt+mB53DTtiz673vfjU8D1Q==}
+  /@types/node@20.19.1:
+    resolution: {integrity: sha512-jJD50LtlD2dodAEO653i3YF04NWak6jN3ky+Ri3Em3mGR39/glWiboM/IePaRbgwSfqM1TpGXfAg8ohn/4dTgA==}
     dependencies:
       undici-types: 6.21.0
     dev: true
@@ -2582,7 +2582,7 @@ packages:
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.11
       '@swc/core': 1.12.1
-      vite: 5.4.19(@types/node@20.19.0)
+      vite: 5.4.19(@types/node@20.19.1)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -2745,7 +2745,7 @@ packages:
       has-symbols: 1.0.3
     dev: true
 
-  /autoprefixer@10.4.21(postcss@8.5.5):
+  /autoprefixer@10.4.21(postcss@8.5.6):
     resolution: {integrity: sha512-O+A6LWV5LDHSJD3LjHYoNi4VLsj/Whi7k6zG12xTYaU4cQ8oxQGckXNX8cRHK5yOZ/ppVHe0ZBXGzSV9jXdVbQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -2757,7 +2757,7 @@ packages:
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
-      postcss: 8.5.5
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -3489,7 +3489,7 @@ packages:
       tailwindcss: ^3.4.0
     dependencies:
       fast-glob: 3.3.2
-      postcss: 8.5.5
+      postcss: 8.5.6
       tailwindcss: 3.4.17
     dev: true
 
@@ -4206,8 +4206,8 @@ packages:
       yallist: 3.1.1
     dev: true
 
-  /lucide-react@0.515.0(react@18.3.1):
-    resolution: {integrity: sha512-Sy7bY0MeicRm2pzrnoHm2h6C1iVoeHyBU2fjdQDsXGP51fhkhau1/ZV/dzrcxEmAKsxYb6bGaIsMnGHuQ5s0dw==}
+  /lucide-react@0.522.0(react@18.3.1):
+    resolution: {integrity: sha512-jnJbw974yZ7rQHHEFKJOlWAefG3ATSCZHANZxIdx8Rk/16siuwjgA4fBULpXEAWx/RlTs3FzmKW/udWUuO0aRw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
     dependencies:
@@ -4462,29 +4462,29 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /postcss-import@15.1.0(postcss@8.5.5):
+  /postcss-import@15.1.0(postcss@8.5.6):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       postcss: ^8.0.0
     dependencies:
-      postcss: 8.5.5
+      postcss: 8.5.6
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.8
     dev: true
 
-  /postcss-js@4.0.1(postcss@8.5.5):
+  /postcss-js@4.0.1(postcss@8.5.6):
     resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
     engines: {node: ^12 || ^14 || >= 16}
     peerDependencies:
       postcss: ^8.4.21
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.5.5
+      postcss: 8.5.6
     dev: true
 
-  /postcss-load-config@4.0.2(postcss@8.5.5):
+  /postcss-load-config@4.0.2(postcss@8.5.6):
     resolution: {integrity: sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==}
     engines: {node: '>= 14'}
     peerDependencies:
@@ -4497,17 +4497,17 @@ packages:
         optional: true
     dependencies:
       lilconfig: 3.1.3
-      postcss: 8.5.5
+      postcss: 8.5.6
       yaml: 2.6.0
     dev: true
 
-  /postcss-nested@6.2.0(postcss@8.5.5):
+  /postcss-nested@6.2.0(postcss@8.5.6):
     resolution: {integrity: sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
-      postcss: 8.5.5
+      postcss: 8.5.6
       postcss-selector-parser: 6.1.2
     dev: true
 
@@ -4523,8 +4523,8 @@ packages:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: true
 
-  /postcss@8.5.5:
-    resolution: {integrity: sha512-d/jtm+rdNT8tpXuHY5MMtcbJFBkhXE6593XVR9UoGCH8jSFGci7jGvMGH5RYd5PBJW+00NZQt6gf7CbagJCrhg==}
+  /postcss@8.5.6:
+    resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.11
@@ -4537,8 +4537,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-tailwindcss@0.6.12(@ianvs/prettier-plugin-sort-imports@4.4.2)(prettier@3.5.3):
-    resolution: {integrity: sha512-OuTQKoqNwV7RnxTPwXWzOFXy6Jc4z8oeRZYGuMpRyG3WbuR3jjXdQFK8qFBMBx8UHWdHrddARz2fgUenild6aw==}
+  /prettier-plugin-tailwindcss@0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2)(prettier@3.6.0):
+    resolution: {integrity: sha512-uQ0asli1+ic8xrrSmIOaElDu0FacR4x69GynTh2oZjFY10JUt6EEumTQl5tB4fMeD6I1naKd+4rXQQ7esT2i1g==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -4592,12 +4592,12 @@ packages:
       prettier-plugin-svelte:
         optional: true
     dependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.4.2(prettier@3.5.3)
-      prettier: 3.5.3
+      '@ianvs/prettier-plugin-sort-imports': 4.4.2(prettier@3.6.0)
+      prettier: 3.6.0
     dev: true
 
-  /prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  /prettier@3.6.0:
+    resolution: {integrity: sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -5010,11 +5010,11 @@ packages:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.5
-      postcss-import: 15.1.0(postcss@8.5.5)
-      postcss-js: 4.0.1(postcss@8.5.5)
-      postcss-load-config: 4.0.2(postcss@8.5.5)
-      postcss-nested: 6.2.0(postcss@8.5.5)
+      postcss: 8.5.6
+      postcss-import: 15.1.0(postcss@8.5.6)
+      postcss-js: 4.0.1(postcss@8.5.6)
+      postcss-load-config: 4.0.2(postcss@8.5.6)
+      postcss-nested: 6.2.0(postcss@8.5.6)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
@@ -5197,7 +5197,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite@5.4.19(@types/node@20.19.0):
+  /vite@5.4.19(@types/node@20.19.1):
     resolution: {integrity: sha512-qO3aKv3HoQC8QKiNSTuUM1l9o/XX3+c+VTgLHbJWHZGeTPVAg2XwazI9UWzoxjIJCGCV2zU60uqMzjeLZuULqA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5228,9 +5228,9 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.19.0
+      '@types/node': 20.19.1
       esbuild: 0.21.5
-      postcss: 8.5.5
+      postcss: 8.5.6
       rollup: 4.21.0
     optionalDependencies:
       fsevents: 2.3.3

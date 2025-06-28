@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^0.6.1
     version: 0.6.1
   '@types/node':
-    specifier: ^20.19.1
-    version: 20.19.1
+    specifier: ^22.15.34
+    version: 22.15.34
   '@types/react':
     specifier: ^18.3.23
     version: 18.3.23
@@ -84,7 +84,7 @@ devDependencies:
     version: 5.8.3
   vite:
     specifier: ^5.4.19
-    version: 5.4.19(@types/node@20.19.1)
+    version: 5.4.19(@types/node@22.15.34)
 
 packages:
 
@@ -2272,8 +2272,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@20.19.1:
-    resolution: {integrity: sha512-jJD50LtlD2dodAEO653i3YF04NWak6jN3ky+Ri3Em3mGR39/glWiboM/IePaRbgwSfqM1TpGXfAg8ohn/4dTgA==}
+  /@types/node@22.15.34:
+    resolution: {integrity: sha512-8Y6E5WUupYy1Dd0II32BsWAx5MWdcnRd8L84Oys3veg1YrYtNtzgO4CFhiBg6MDSjk7Ay36HYOnU7/tuOzIzcw==}
     dependencies:
       undici-types: 6.21.0
     dev: true
@@ -2582,7 +2582,7 @@ packages:
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.11
       '@swc/core': 1.12.1
-      vite: 5.4.19(@types/node@20.19.1)
+      vite: 5.4.19(@types/node@22.15.34)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -5197,7 +5197,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite@5.4.19(@types/node@20.19.1):
+  /vite@5.4.19(@types/node@22.15.34):
     resolution: {integrity: sha512-qO3aKv3HoQC8QKiNSTuUM1l9o/XX3+c+VTgLHbJWHZGeTPVAg2XwazI9UWzoxjIJCGCV2zU60uqMzjeLZuULqA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5228,7 +5228,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.19.1
+      '@types/node': 22.15.34
       esbuild: 0.21.5
       postcss: 8.5.6
       rollup: 4.21.0

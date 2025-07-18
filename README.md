@@ -7,88 +7,149 @@
 <img src="public/vite.svg" style="width: 90px; height: 100px;">
 </div>
 
-# React Starter Template w/ ViteTs
+# React Starter Template w/ Vite & TypeScript
 
-## A Minimal React Starter Template with Vite, TailwindCSS, and TypeScript pre-configured with ESLint and Prettier
-
-<br>
-
-| **Template Preview** |
-| -------------------- |
-| ![mockup]            |
+## A Modern React Starter Template with Vite, TypeScript, TailwindCSS, and ESLint/Prettier pre-configured
 
 </div>
 
-## Features
+## ✨ Features
 
 - ⚡ **[Vite](https://vitejs.dev/)** - Lightning fast frontend tooling
-- ⚛️ **[React 18](https://reactjs.org/)** - A JavaScript library for building user interfaces
+- ⚛️ **[React 19](https://reactjs.org/)** - A JavaScript library for building user interfaces
 - 🎨 **[TailwindCSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapidly building custom designs
 - 📦 **[TypeScript](https://www.typescriptlang.org/)** - A typed superset of JavaScript that compiles to plain JavaScript
-- 📦 **[react-router-dom](https://reactrouter.com/)** - Declarative routing for React
-- 📦 **[lucide-react](https://lucide.dev/)** - Beautiful & consistent icons
-- 📝 **[ESLint](https://eslint.org/)** - The pluggable linting utility for JavaScript and JSX
+- 🛣️ **[React Router DOM](https://reactrouter.com/)** - Declarative routing for React
+- 🎯 **[Lucide React](https://lucide.dev/)** - Beautiful & consistent icons
+- 🧹 **[ESLint](https://eslint.org/)** - The pluggable linting utility for JavaScript and JSX
 - ✨ **[Prettier](https://prettier.io/)** - An opinionated code formatter
-- 📦 **[pnpm](https://pnpm.io/)** - Fast, disk space efficient package manager
+- 🚀 **[Bun](https://bun.sh/)** - Fast all-in-one JavaScript runtime and package manager
+- 🎨 **[Tailwind Merge](https://github.com/dcastil/tailwind-merge)** - Utility to efficiently merge Tailwind CSS classes
+- 📝 **[CLSX](https://github.com/lukeed/clsx)** - Tiny utility for constructing className strings conditionally
 
-## Getting Started
+## 🚀 Quick Start
 
-**Scaffold the project:**
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Bun](https://bun.sh/) (recommended) or npm/yarn
+
+### Installation
+
+**Clone the repository:**
 
 ```bash
-pnpx degit Khushal-ag/react-template-viteTs <project-name>
-
+git clone https://github.com/Khushal-ag/react-template-viteTs.git <project-name>
 cd <project-name>
 ```
 
 **Install dependencies:**
 
 ```bash
-pnpm i
+# Using Bun (recommended)
+bun install
+
+# Or using npm
+npm install
+
+# Or using yarn
+yarn install
 ```
 
-**Initialize a new git repository _(Optional)_:**
+**Start the development server:**
 
 ```bash
-git init
-git add .
-git commit -m "init"
+bun dev
+# or
+npm run dev
+# or
+yarn dev
 ```
 
-## Available Scripts
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-In the project directory, you can run:
+## 📜 Available Scripts
 
 | **Script**   | **Description**                                                              |
 | ------------ | ---------------------------------------------------------------------------- |
-| `dev`        | Runs the app in the development mode.                                        |
-| `build`      | Builds the app for production to the `dist` folder.                          |
-| `serve`      | Serves the production build from the `dist` folder.                          |
-| `preview`    | Bundles and serves the production build from the `dist` folder.              |
-| `type-check` | Runs TypeScript type-checking.                                               |
-| `lint`       | Runs ESLint with Prettier.                                                   |
-| `fix`        | Runs ESLint with Prettier and fixes the errors.                              |
-| `fmt`        | Checks if the code is formatted with Prettier, if not then formats the code. |
-| `fmt:check`  | Checks if the code is formatted with Prettier.                               |
-| `fmt:write`  | Formats the code with Prettier.                                              |
+| `dev`        | Runs the app in development mode with hot reload                              |
+| `build`      | Builds the app for production to the `dist` folder                          |
+| `serve`      | Serves the production build from the `dist` folder                          |
+| `preview`    | Bundles and serves the production build from the `dist` folder              |
+| `type-check` | Runs TypeScript type-checking                                               |
+| `lint`       | Runs ESLint to check for code quality issues                                |
+| `fmt`        | Formats the code with Prettier                                              |
+| `fmt:check`  | Checks if the code is formatted with Prettier                               |
+| `clean`      | Removes `dist` and `node_modules` directories                               |
+| `cleani`     | Cleans and reinstalls dependencies (Bun only)                               |
 
-## After Installation Checklist
+## 🛠️ Development
 
-- [ ] Update `package.json` with your project details.
-- [ ] Update `README.md` with your project details.
-- [ ] Update `LICENSE` with your name and year.
-- [ ] Update `index.html` to your liking.
-- [ ] Clear `app.tsx` and write your own.
+### Project Structure
 
-## Switching Package Manager
+```
+src/
+├── App.tsx              # Main application component
+├── main.tsx             # Application entry point
+├── styles/
+│   └── index.css        # Global styles and Tailwind imports
+└── types/
+    └── reset.d.ts       # TypeScript type definitions
+```
 
-This template uses [pnpm](https://pnpm.io/) as the default package manager. If you want to use `npm` or `yarn`, you need to remove the `pnpm-lock.yaml` file and run `npm i` or `yarn` to generate the lock file for the respective package manager.
+### Code Quality
 
-## License
+This template includes:
+
+- **ESLint** configuration with React and TypeScript rules
+- **Prettier** for consistent code formatting
+- **TypeScript** for type safety
+- **TailwindCSS** for utility-first styling
+
+### Package Manager
+
+This template uses [Bun](https://bun.sh/) as the default package manager for its speed and efficiency. However, you can use npm or yarn by:
+
+1. Removing the `bun.lock` file
+2. Running `npm install` or `yarn install` to generate the respective lock file
+
+## 📋 After Installation Checklist
+
+- [ ] Update `package.json` with your project details
+- [ ] Update `README.md` with your project information
+- [ ] Update `LICENSE` with your name and year
+- [ ] Update `index.html` title and meta tags
+- [ ] Clear `App.tsx` and start building your application
+- [ ] Configure your deployment platform (Vercel, Netlify, etc.)
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+This template includes a `vercel.json` configuration file for easy deployment on Vercel.
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
+
+### Other Platforms
+
+The built files in the `dist` folder can be deployed to any static hosting service like:
+
+- Netlify
+- GitHub Pages
+- AWS S3
+- Firebase Hosting
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contributors
+## 👥 Contributors
 
 <div align=center>
 
@@ -112,4 +173,3 @@ _Note: It may take up to 24h for the [contrib.rocks][contrib-rocks] plugin to up
 
 <!----------------------------------{ Images }--------------------------------->
 
-[mockup]: https://graph.org/file/d18be68a824517335e1eb.png

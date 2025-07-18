@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Clipboard, ClipboardCheck, Copyright, Github } from "lucide-react";
+import { Clipboard, ClipboardCheck, Copyright, Github, Sparkles, Code, Zap, CheckCircle } from "lucide-react";
 
 export default function App() {
   const [isCopied, setIsCopied] = useState(false);
@@ -10,84 +10,133 @@ export default function App() {
     try {
       navigator.clipboard.writeText(text);
       setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {
       console.error("Failed to copy: ", err);
     }
   };
+
   return (
-    <>
-      <main className="grid min-h-screen grid-cols-1 place-content-around  bg-zinc-900">
-        <header className="container mx-auto px-4 pt-4 text-center">
-          <h1 className="bg-gradient-to-b from-cyan-400 to-purple-400 bg-clip-text text-4xl font-bold tracking-wider text-transparent md:text-6xl">
+    <div className="min-h-screen bg-[#212121] relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-500/3 via-gray-500/2 to-gray-600/3"></div>
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gray-500/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <main className="container mx-auto px-4 py-16 relative z-10">
+        {/* Header */}
+        <header className="text-center mb-16">
+          <div className="mb-8 flex justify-center">
+            <div className="h-20 w-20 rounded-full bg-gradient-to-br from-blue-500 to-gray-600 flex items-center justify-center shadow-lg">
+              <img src="/vite.svg" alt="Vite" className="h-12 w-12" />
+            </div>
+          </div>
+          <h1 className="bg-gradient-to-r from-blue-400 via-gray-300 to-gray-400 bg-clip-text text-5xl font-bold text-transparent mb-4 md:text-6xl">
             React Template Vite
           </h1>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            A modern, feature-packed React template to jumpstart your project
+          </p>
         </header>
-        <div className="flex items-center justify-center gap-5">
-          <img src="/react.svg" className="h-40 w-40" alt="react" />
-          <div className="text-6xl font-bold text-cyan-100">+</div>
-          <img src="/vite.svg" className="h-36 w-36" alt="vite" />
+
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-4xl mx-auto">
+          <FeatureCard 
+            icon={<Code className="h-6 w-6" />}
+            title="Modern Stack"
+            description="Powered by Vite, TypeScript, and TailwindCSS"
+          />
+          <FeatureCard 
+            icon={<Sparkles className="h-6 w-6" />}
+            title="Pre-configured"
+            description="Ready with ESLint, Prettier, and Lucide Icons"
+          />
+          <FeatureCard 
+            icon={<CheckCircle className="h-6 w-6" />}
+            title="Production Ready"
+            description="Start building right away with best practices built-in"
+          />
         </div>
-        <p className="px-4 text-center text-3xl tracking-wide text-amber-50">
-          A React template with <Span>Vite</Span>, <Span>TypeScript</Span>,{" "}
-          <Span>TailwindCSS</Span>, <Span>React Router</Span>,{" "}
-          <Span>Lucide Icons</Span> and pre-configured with <Span>ESLint</Span>{" "}
-          and <Span>Prettier</Span>.
-        </p>
-        <section className="flex items-center gap-4 justify-self-center p-4 text-cyan-50 lg:flex-row">
-          <div className="rounded-xl border border-sky-500 bg-gradient-to-br from-violet-600 via-blue-600 to-blue-500 px-4 py-3 text-lg font-semibold hover:from-violet-600 hover:to-blue-700 hover:shadow-md hover:shadow-blue-600 active:ring-2 active:ring-blue-600 active:ring-offset-2 active:ring-offset-black/90">
+
+        {/* Get Started Section */}
+        <div className="text-center mb-12">
+          <h2 className="text-2xl font-semibold text-white mb-8">Get Started Now</h2>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
+          <div className="group">
             <a
               href="https://github.com/Khushal-ag/react-template-viteTS"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-fit items-center gap-2"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-gray-700 hover:from-blue-700 hover:to-gray-800 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl text-sm"
             >
-              <Github className="mr-1 h-5 w-5 text-stone-900" />
-              Visit on Github
+              <Github className="h-4 w-4" />
+              View on GitHub
             </a>
           </div>
 
-          <div className="group rounded-2xl border border-zinc-700 p-1 font-mono font-semibold hover:border-zinc-600">
-            <p
-              onClick={copyToClipboard}
-              className="flex cursor-pointer items-center gap-1 rounded-xl bg-zinc-800 px-4 py-3 hover:bg-zinc-700/25"
-            >
-              <span className="mr-2 text-orange-500">$</span>
-
-              <span>pnpx</span>
-
-              <span className="line-clamp-1">
-                degit Khushal-ag/react-template-viteTs {"<project-name>"}
-              </span>
-
-              <span className="ml-2 text-gray-400 transition-colors duration-300 group-hover:text-white">
-                {isCopied ? (
-                  <ClipboardCheck className="h-5 w-5" />
-                ) : (
-                  <Clipboard className="h-5 w-5" />
-                )}
-              </span>
-            </p>
+          <div className="group w-full max-w-lg">
+            <div className="bg-gray-800 rounded-lg p-1">
+              <button
+                onClick={copyToClipboard}
+                className="flex w-full items-center gap-2 bg-gray-700 rounded-md px-4 py-3 text-left font-mono text-xs text-gray-200 hover:bg-gray-600 transition-colors duration-300"
+              >
+                <span className="text-orange-400 flex-shrink-0">$</span>
+                <span className="text-gray-300 flex-shrink-0">pnpx</span>
+                <span className="text-blue-400 flex-shrink-0">degit</span>
+                <span className="text-gray-200 truncate">Khushal-ag/react-template-viteTs</span>
+                <span className="text-gray-500 flex-shrink-0">&lt;project-name&gt;</span>
+                <span className="ml-auto text-gray-400 transition-colors duration-300 group-hover:text-white flex-shrink-0">
+                  {isCopied ? (
+                    <ClipboardCheck className="h-4 w-4 text-green-400" />
+                  ) : (
+                    <Clipboard className="h-4 w-4" />
+                  )}
+                </span>
+              </button>
+            </div>
           </div>
-        </section>
-        <footer className="container mt-10 grid place-items-center justify-self-center text-white ">
-          <span className="flex items-center gap-1">
+        </div>
+
+        {/* Footer */}
+        <footer className="text-center mt-16">
+          <div className="flex items-center justify-center gap-2 text-gray-400">
             <Copyright className="h-4 w-4" />
             <span>{new Date().getFullYear()}</span>
+            <span>•</span>
             <a
               href="https://github.com/Khushal-ag"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cyan-200 hover:text-cyan-400"
+              className="text-blue-400 hover:text-blue-300 transition-colors duration-300"
             >
               Khushal-ag@github
             </a>
-          </span>
+          </div>
         </footer>
       </main>
-    </>
+    </div>
   );
 }
 
-const Span = ({ children }: { children: React.ReactNode }) => (
-  <span className="text-cyan-200">{children}</span>
+const FeatureCard = ({ 
+  icon, 
+  title, 
+  description 
+}: { 
+  icon: React.ReactNode; 
+  title: string; 
+  description: string; 
+}) => (
+  <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/30 rounded-xl p-6 hover:bg-gray-800/70 transition-all duration-300 shadow-lg">
+    <div className="mb-4 w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400">
+      {icon}
+    </div>
+    <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
+    <p className="text-sm text-gray-400">{description}</p>
+  </div>
 );

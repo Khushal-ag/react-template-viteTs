@@ -2,9 +2,12 @@ cache
 .cache
 public
 CHANGELOG.md
-.yarn
 dist
 node_modules
-.next
 build
 .contentlayer
+.vscode
+.git
+.github
+.husky
+.vscode

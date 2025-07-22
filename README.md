@@ -34,13 +34,25 @@
 - [Node.js](https://nodejs.org/) (v18 or higher)
 - [Bun](https://bun.sh/) (recommended) or npm/yarn
 
-### Installation
+### Using This Template
 
-**Clone the repository:**
+**Create a new project using this template:**
 
 ```bash
-git clone https://github.com/Khushal-ag/react-template-viteTs.git <project-name>
-cd <project-name>
+# Using Bun (recommended)
+bunx degit Khushal-ag/react-template-viteTs my-app
+
+# Or using npm
+npx degit Khushal-ag/react-template-viteTs my-app
+
+# Or using yarn
+yarn degit Khushal-ag/react-template-viteTs my-app
+```
+
+**Navigate to your project:**
+
+```bash
+cd my-app
 ```
 
 **Install dependencies:**
@@ -70,18 +82,18 @@ Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 ## 📜 Available Scripts
 
-| **Script**   | **Description**                                                              |
-| ------------ | ---------------------------------------------------------------------------- |
-| `dev`        | Runs the app in development mode with hot reload                              |
-| `build`      | Builds the app for production to the `dist` folder                          |
-| `serve`      | Serves the production build from the `dist` folder                          |
-| `preview`    | Bundles and serves the production build from the `dist` folder              |
-| `type-check` | Runs TypeScript type-checking                                               |
-| `lint`       | Runs ESLint to check for code quality issues                                |
-| `fmt`        | Formats the code with Prettier                                              |
-| `fmt:check`  | Checks if the code is formatted with Prettier                               |
-| `clean`      | Removes `dist` and `node_modules` directories                               |
-| `cleani`     | Cleans and reinstalls dependencies (Bun only)                               |
+| **Script**   | **Description**                                                |
+| ------------ | -------------------------------------------------------------- |
+| `dev`        | Runs the app in development mode with hot reload               |
+| `build`      | Builds the app for production to the `dist` folder             |
+| `serve`      | Serves the production build from the `dist` folder             |
+| `preview`    | Bundles and serves the production build from the `dist` folder |
+| `type-check` | Runs TypeScript type-checking                                  |
+| `lint`       | Runs ESLint to check for code quality issues                   |
+| `fmt`        | Formats the code with Prettier                                 |
+| `fmt:check`  | Checks if the code is formatted with Prettier                  |
+| `clean`      | Removes `dist` and `node_modules` directories                  |
+| `cleani`     | Cleans and reinstalls dependencies (Bun only)                  |
 
 ## 🛠️ Development
 
@@ -172,4 +184,3 @@ _Note: It may take up to 24h for the [contrib.rocks][contrib-rocks] plugin to up
 [contrib-rocks]: https://contrib.rocks/preview?repo=Khushal-ag%2Freact-template-viteTs
 
 <!----------------------------------{ Images }--------------------------------->
-
